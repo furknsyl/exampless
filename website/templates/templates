@@ -1,14 +1,1 @@
-<!-- thankyou.html -->
-{% extends "base.html" %}
 
-{% block content %}
-
-<h1>Thank you. Here is the info you gave:</h1>
-<ul>
-    <li>login: {{session['activity']}}</li>
-    <li>Password: {{session['activity2']}}</li>
-
-
-</ul>
-
-{% endblock %}
