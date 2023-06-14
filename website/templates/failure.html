@@ -1,0 +1,25 @@
+<!-- failure.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> TRY AGAIN!!! <h1>
+
+{% endblock %}
+
+<!-- home.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Tourist activities</h1>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    {{ form.activity.label }} {{form.activity}}
+    {{ form.activity2.label }} {{form.activity2}}
+    {{ form.submit() }}
+</form>
+
+{% endblock %}
